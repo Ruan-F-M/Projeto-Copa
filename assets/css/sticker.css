@@ -1,0 +1,27 @@
+.sticker {
+    position: fixed;
+    width: 180px;
+    left: -180px;
+    bottom: 0;
+}
+
+/* definir toda a movimentação */
+@keyframes show {
+    0% {
+        left: -180px;
+    }
+    50% {
+        left: -40px;
+    }
+    100% {
+        left: -180px;
+    }
+}
+
+/* ease in out entra de vagar e volta de vagar */
+.sticker.show {
+    animation: ease-in-out;
+    animation-name: show;
+    animation-duration: 3s;
+
+}
